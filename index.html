@@ -3,12 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Two-Column Layout</title>
+    <title>Responsive Layout</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100 flex justify-center items-center min-h-screen">
+<body class="bg-gray-100 flex flex-col min-h-screen">
 
-    <div class="container mx-auto p-4">
+    <!-- Header -->
+    <header class="text-center py-8">
+        <h1 class="text-4xl font-bold">What The Placeholder?!</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto p-4">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <!-- Column 1: Text -->
             <div class="bg-white p-4 rounded shadow">
@@ -17,31 +24,56 @@
             </div>
 
             <!-- Column 2: Image Placeholder -->
-            <div class="bg-gray-200 p-4 rounded shadow">
-                <h1 class="text-xl font-bold mb-2">Working Image Placeholder</h1>
-                <img src="https://placehold.co/300x200" class="rounded mx-auto">
+            <div class="bg-white p-4 rounded shadow">
+                <h1 class="text-xl font-bold mb-2">Functional Image Placeholder</h1>
+                <img src="https://placehold.co/300x200" alt="Image 1 Placeholder" class="rounded mx-auto">
             </div>
 
             <!-- Column 3: Image Placeholder -->
-            <div class="bg-gray-200 p-4 rounded shadow">
-                <h1 class="text-xl font-bold mb-2">Broken URL Image Placeholder</h1>
-                <img src="placehold.co///300x200" class="rounded mx-auto">
+            <div class="bg-white p-4 rounded shadow">
+                <h1 class="text-xl font-bold mb-2">Broken Image Placeholder</h1>
+                <img src="https://placehold.co/300x20_0" alt="Broken Image Placeholder" class="rounded mx-auto">
+            </div>
+            <!-- Column 3: Image Placeholder -->
+            <div class="bg-white p-4 rounded shadow">
+                <h1 class="text-xl font-bold mb-2">Broken Image Placeholder</h1>
+                <img src="https://placehold.co/300x20_0" class="rounded mx-auto">
+            </div>
+            <!-- Column 4: Video Placeholder -->
+            <div class="bg-white p-4 rounded shadow">
+                <h1 class="text-xl font-bold mb-2">YouTube Video Placeholder</h1>
+                <div class="flex justify-center">
+                    <iframe width="300" height="200" src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?si=b7gwxVdraz7ATkGM" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
             </div>
 
             <!-- Column 4: Video Placeholder -->
-            <div class="bg-gray-200 p-4 rounded shadow">
-                <h1 class="text-xl font-bold mb-2">Video Content</h1> 
+            <div class="bg-white p-4 rounded shadow">
+                <h1 class="text-xl font-bold mb-2">Local Video Placeholder</h1>
                 <div class="flex justify-center">
-    <iframe width="300" height="200" src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?si=b7gwxVdraz7ATkGM" 
-        title="YouTube video player" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; gyroscope; picture-in-picture; web-share" 
-        referrerpolicy="strict-origin-when-cross-origin" 
-        allowfullscreen>
-    </iframe>
-</div>
-      </div>
-    </div>
+                    <iframe width="300" height="200" src="video.mp4" 
+                        title="Video player" 
+                        frameborder="0"  
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-4 mt-4 sticky bottom-0">
+        <a href="https://github.com/kvanrooyen-inv/Placeholder-Examples" class="text-lg font-bold flex justify-center items-center gap-2">
+            <i class="fab fa-github"></i>
+            <span>View the source code</span>
+        </a>
+    </footer>
 
 </body>
 </html>
